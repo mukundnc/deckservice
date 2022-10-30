@@ -1,8 +1,8 @@
 
-module.exports.PORT = 8000;
+module.exports.PORT = process.env.PORT;
 
-module.exports.useAlgo = "Complex";
+module.exports.useAlgo = process.env.useAlgo;
 
-module.exports.maxShuffles = 20;
+module.exports.maxShuffles = process.env.maxShuffles;
 
-module.exports.deckSize = 52;
+module.exports.deckSize = process.env.deckSize;
