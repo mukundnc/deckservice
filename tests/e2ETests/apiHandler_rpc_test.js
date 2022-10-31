@@ -13,7 +13,9 @@ describe('Test suite to run all test cases on apiHandler', function(){
     });
 
     it('1. Create new deck unit test case', function(done){
+        console.log(URL);
         request({ url: URL+'decks', method: 'POST', json: {}}, function(error, request, response){     
+            console.log(error);
             should.not.exist(error, "response should exist");
             should.exist(response, "response should exist");
             should.exist(response.name, "response should have name");
