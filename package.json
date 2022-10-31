@@ -4,8 +4,8 @@
   "description": "deck api service",
   "main": "server.js",
   "scripts": {
-    "test": "istanbul cover node_modules/mocha/bin/_mocha  tests/unitTests/apiHandler_test.js",
-    "testrpc": "mocha tests/e2ETests/apiHandler_rpc_test.js",
+    "test": "env-cmd istanbul cover node_modules/mocha/bin/_mocha  tests/unitTests/apiHandler_test.js",
+    "testrpc": "env-cmd mocha tests/e2ETests/apiHandler_rpc_test.js",
     "dev": "env-cmd node ./server.js ",
     "start": "node ./server.js"
   },
