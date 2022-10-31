@@ -1,11 +1,12 @@
 var should = require('should');
 var deck = require('./../../server/deck');
 var request = require('request');
+var config = require("./../../config");
 
 describe('Test suite to run all test cases on apiHandler', function(){
         
     var addedDeck = {}
-    var URL = "http://localhost:8000/"
+    var URL = `http://localhost:${config.PORT}/`
 
     beforeEach(function(done){
         done();
