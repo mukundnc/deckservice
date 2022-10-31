@@ -1,18 +1,21 @@
 var should = require('should');
 var deck = require('./../../server/deck');
 var request = require('request');
+var config = require("./../../config");
 
 describe('Test suite to run all test cases on apiHandler', function(){
         
     var addedDeck = {}
-    var URL = "http://localhost:8000/"
+    var URL = `http://localhost:${config.PORT}/`
 
     beforeEach(function(done){
         done();
     });
 
     it('1. Create new deck unit test case', function(done){
+        console.log(URL);
         request({ url: URL+'decks', method: 'POST', json: {}}, function(error, request, response){     
+            console.log(error);
             should.not.exist(error, "response should exist");
             should.exist(response, "response should exist");
             should.exist(response.name, "response should have name");

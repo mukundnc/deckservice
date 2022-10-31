@@ -1,21 +1,4 @@
-# Prerequisites before running the application
-
-To run the application make sure have installed nodejs and npm.
-You also need to install mocha and istanbul globally for running the unit test cases and coverage.
-```
-npm install mocha -g
-npm install istanbul -g
-```
-You need to set shuffle alogrithm in config.js it takes currently "Simple" and "Complex" as value.
-```
-module.exports.useAlgo = "Simple"; 
-```
-You can also set port on which you want the application to run here.
-```
-module.exports.PORT = 8000; 
-```
-Now we are set to run the application.
-
+## Readme
 ## To run the application use the below commands sequentially
 ```
 npm install
